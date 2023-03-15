@@ -1,7 +1,7 @@
 import { useState } from 'react'
 import { Dialog } from '@headlessui/react'
 import {FaGithub,FaLinkedin} from 'react-icons/fa'
-import image from '../src/ProfilePic.jpg'
+import ProfilePic from '../src/ProfilePic.jpg'
 
 import { Bars3Icon, XMarkIcon } from '@heroicons/react/24/outline'
 
@@ -161,8 +161,8 @@ export default function Example() {
               </a>
             </div>
           </div>
-          <div>Right Side</div>
-          <img className='rounded-full h-2' src={image}></img>
+          
+          <img className='rounded-full max-w-xs' src={ProfilePic}></img>
          
           </div>
           
