@@ -142,9 +142,9 @@ export default function Example() {
             Hi!, I'm Micheci Martinez a Full Stack Web Developer in Dallas,Texas
             </p>
             <div className=' mt-5 flex justify-around' >
-            <a href="https://www.w3schools.com/"><FaGithub/></a>
-            <FaLinkedin/>
-            <FaTwitter/>
+            <a href="https://www.linkedin.com/in/micheci-martinez-6736201a1/"><FaGithub/></a>
+            <a href="https://github.com/micheci"><FaLinkedin/></a>
+            <a href="https://twitter.com/icehcim"><FaTwitter/></a>
           </div>
 
         
