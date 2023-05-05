@@ -5,6 +5,7 @@ import Freedom from '../Pics/Freedom1.jpg'
 import NFT from '../Pics/NFT.jpg'
 import Weather from '../Pics/Weather.jpg'
 import Finance from '../Pics/Finance.jpg'
+import MMGG from '../Pics/MMGG.jpg'
 
 function Projects() {
   return (
@@ -70,7 +71,7 @@ function Projects() {
                         Mr.atmospheric 
                     </a>
 
-                    <span class="text-sm text-gray-500 dark:text-gray-300">On: 13 October 2019</span>
+                    <span class="text-sm text-gray-500 dark:text-gray-300">On: 13 December 2022</span>
                 </div>
             </div>
 
@@ -82,7 +83,19 @@ function Projects() {
                        F and T block
                     </a>
                     
-                    <span class="text-sm text-gray-500 dark:text-gray-300">On: 20 October 2019</span>
+                    <span class="text-sm text-gray-500 dark:text-gray-300">On: 20 October 2022</span>
+                </div>
+            </div>
+
+            <div class="lg:flex">
+                <img class="object-cover w-full h-56 rounded-lg lg:w-64" src={MMGG} alt="2 Stream site"/>
+
+                <div class="flex flex-col justify-between py-6 lg:mx-6">
+                    <a href="https://mmgg-production.up.railway.app/" class="text-xl font-semibold text-gray-800 hover:underline dark:text-white ">
+                        MMGG
+                    </a>
+
+                    <span class="text-sm text-gray-500 dark:text-gray-300">On: 20 October 2022</span>
                 </div>
             </div>
         </div>
