@@ -6,6 +6,7 @@ import NFT from '../Pics/NFT.jpg'
 import Weather from '../Pics/Weather.jpg'
 import Finance from '../Pics/Finance.jpg'
 import MMGG from '../Pics/MMGG.jpg'
+import GMG from '../Pics/GMG.jpg'
 
 function Projects() {
   return (
@@ -96,6 +97,18 @@ function Projects() {
                     </a>
 
                     <span class="text-sm text-gray-500 dark:text-gray-300">On: 20 October 2022</span>
+                </div>
+            </div>
+
+            <div class="lg:flex">
+                <img class="object-cover w-full h-56 rounded-lg lg:w-64" src={GMG} alt="Gym and Chew"/>
+
+                <div class="flex flex-col justify-between py-6 lg:mx-6">
+                    <a href="https://hushed-clover-production.up.railway.app/" class="text-xl font-semibold text-gray-800 hover:underline dark:text-white ">
+                        GYM-n-CHEW
+                    </a>
+
+                  
                 </div>
             </div>
         </div>
