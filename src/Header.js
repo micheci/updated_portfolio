@@ -144,7 +144,7 @@ export default function Example() {
             <div className=' mt-5 flex justify-around' >
             <a href="https://www.linkedin.com/in/micheci-martinez-6736201a1/"><FaGithub/></a>
             <a href="https://github.com/micheci"><FaLinkedin/></a>
-            <a href="https://twitter.com/icehcim"><FaTwitter/></a>
+            <a href="https://twitter.com/Micheci12"><FaTwitter/></a>
           </div>
 
         
