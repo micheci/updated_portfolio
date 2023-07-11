@@ -24,7 +24,7 @@ function Projects() {
                         A Peek into Space
                     </a>
                     
-                    <span class="text-sm text-gray-500 dark:text-gray-300">On: 20 October 2019</span>
+                    <span class="text-sm text-gray-500 dark:text-gray-300">Introducing StellarView, an extraordinary website that allows users to embark on a mesmerizing journey through space and time. By simply entering the desired date, StellarView transports users to a virtual cosmic realm, providing a captivating glimpse of the universe as it appeared on that specific day.</span>
                 </div>
             </div>
 
@@ -36,7 +36,7 @@ function Projects() {
                         Dos Streams
                     </a>
 
-                    <span class="text-sm text-gray-500 dark:text-gray-300">On: 20 October 2019</span>
+                    <span class="text-sm text-gray-500 dark:text-gray-300">StreamSync brings together the captivating content of Ibai, the renowned Spanish streamer, and the thrilling updates from Riot Games, the creators of popular games like League of Legends and Valorant. Whether you're a fan of Ibai's entertaining streams, hilarious commentary, and engaging community interactions, or you're eager to stay updated on Riot Games' esports tournaments, game releases, and exclusive content, StreamSync has got you covered.</span>
                 </div>
             </div>
 
@@ -48,7 +48,7 @@ function Projects() {
                         Freedom Social Media
                     </a>
 
-                    <span class="text-sm text-gray-500 dark:text-gray-300">On: 25 November 2020</span>
+                    <span class="text-sm text-gray-500 dark:text-gray-300">Freedom App is designed to liberate your creativity and provide a safe space for sharing your unique perspective with the world. Gone are the days of lengthy text posts and mundane updates. With Freedom App, your pictures become the canvas for self-expression, allowing you to tell your story in a visually stunning and captivating way.</span>
                 </div>
             </div>
 
@@ -60,7 +60,7 @@ function Projects() {
                         MunkyNFT
                     </a>
 
-                    <span class="text-sm text-gray-500 dark:text-gray-300">On: 30 September 2020</span>
+                    <span class="text-sm text-gray-500 dark:text-gray-300">Immerse yourself in the vivid and imaginative world of MunkyNFT as you explore a diverse range of art styles, themes, and techniques. From breathtaking illustrations and mesmerizing animations to thought-provoking conceptual art, each MunkyNFT is a unique and exclusive creation, waiting to be discovered and appreciated by collectors like you.</span>
                 </div>
             </div>
 
@@ -72,7 +72,7 @@ function Projects() {
                         Mr.atmospheric 
                     </a>
 
-                    <span class="text-sm text-gray-500 dark:text-gray-300">On: 13 December 2022</span>
+                    <span class="text-sm text-gray-500 dark:text-gray-300">By entering your latitude and longitude coordinates, WeatherCast generates a personalized weekly weather forecast for your chosen location. Stay informed about the upcoming temperature ranges, precipitation chances, wind conditions, and other important weather factors that can impact your plans.</span>
                 </div>
             </div>
 
@@ -84,7 +84,7 @@ function Projects() {
                        F and T block
                     </a>
                     
-                    <span class="text-sm text-gray-500 dark:text-gray-300">On: 20 October 2022</span>
+                    <span class="text-sm text-gray-500 dark:text-gray-300">FinTrack offers a seamless and user-friendly experience that simplifies the process of creating and maintaining a budget. Take charge of your expenses by setting personalized spending limits for different categories, such as groceries, entertainment, bills, and more. Easily track your income and expenses, and receive real-time insights into your financial health.</span>
                 </div>
             </div>
 
@@ -96,7 +96,7 @@ function Projects() {
                         MMGG
                     </a>
 
-                    <span class="text-sm text-gray-500 dark:text-gray-300">On: 20 October 2022</span>
+                    <span class="text-sm text-gray-500 dark:text-gray-300">Simply enter the player's name, and PlayerInfo will provide you with an extensive profile, showcasing their gaming history, performance metrics, rankings, and more. Dive deep into their statistics, such as win rate, KDA (Kill/Death/Assist ratio), and other game-specific metrics, giving you a comprehensive understanding of their gameplay style and skill level.</span>
                 </div>
             </div>
 
@@ -107,6 +107,7 @@ function Projects() {
                     <a href="https://hushed-clover-production.up.railway.app/" class="text-xl font-semibold text-gray-800 hover:underline dark:text-white ">
                         GYM-n-CHEW
                     </a>
+                    <span class="text-sm text-gray-500 dark:text-gray-300">Welcome to Gym-n-Chew, the premier social media app designed specifically for fitness enthusiasts who love to share their workout experiences and culinary creations. Gym-n-Chew provides a unique platform where you can showcase your fitness journey through captivating workout pictures and delicious food posts, all in one vibrant community.</span>
 
                   
                 </div>

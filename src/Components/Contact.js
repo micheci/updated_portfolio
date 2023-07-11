@@ -51,7 +51,7 @@ import emailjs from '@emailjs/browser';
     <div id="Contact" className='pb-3 contactUs bg-white dark:bg-gray-900'>
   <div class="py-8 lg:py-16 px-4 mx-auto max-w-screen-md">
 
-    <h1 className="mb-5 text-4xl tracking-tight font-extrabold text-center text-gray-900 dark:text-white">Contact Us</h1>
+    <h1 className="mb-5 text-4xl tracking-tight font-extrabold text-center text-gray-900 dark:text-white">Contact Me</h1>
     
       <form className='formData space-y-8' ref={form} onSubmit={sendEmail}>
         <label className='block mb-2 text-sm font-medium text-gray-900 dark:text-gray-300'>Name</label>
