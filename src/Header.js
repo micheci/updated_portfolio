@@ -124,7 +124,7 @@ export default function Example() {
           </svg>
         </div>
 
-        <div className="mx-auto max-w-2xl py-32 sm:py-48 lg:py-56">
+        <div className="mx-auto max-w-2xl py-32 sm:py-48 lg:py-32" >
           <div className="hidden sm:mb-8 sm:flex sm:justify-center">
             <div className="relative rounded-full py-1 px-3 text-sm leading-6 text-gray-600 ring-1 ring-gray-900/10 hover:ring-gray-900/20">
               Hi! take a look at my most recent projects.{' '}
@@ -139,7 +139,7 @@ export default function Example() {
             <h1 className="text-4xl font-bold tracking-tight text-gray-900 sm:text-6xl">
               Full Stack Web Developer
             </h1>
-            <p className="mt-6 text-lg leading-8 text-gray-600">
+            <p className="mt-4 text-lg leading-8 text-gray-600">
             Hi!, I'm Micheci Martinez a Full Stack Web Developer in Dallas,Texas
             </p>
             <div className=' mt-5 flex justify-around' >
