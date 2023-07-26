@@ -7,6 +7,7 @@ import Weather from '../Pics/Weather.jpg'
 import Finance from '../Pics/Finance.jpg'
 import MMGG from '../Pics/MMGG.jpg'
 import GMG from '../Pics/GMG.jpg'
+import NightSkyVid from '../Videos/NightSky.mp4'
 
 function Projects() {
   return (
@@ -18,6 +19,7 @@ function Projects() {
         <div class="grid grid-cols-1 gap-8 mt-8 md:mt-16 md:grid-cols-2">
             <div class="lg:flex">
                 <img class="object-cover w-full h-56 rounded-lg lg:w-64" src={NightSky} alt="Night sky Website"/>
+                <video src={NightSkyVid} width="600" height="300" controls="controls"></video>
 
                 <div class="flex flex-col justify-between py-6 lg:mx-6">
                     <a href="https://spacesky-production.up.railway.app/" class="text-xl font-semibold text-gray-800 hover:underline dark:text-white ">
@@ -66,7 +68,6 @@ function Projects() {
 
             <div class="lg:flex">
                 <img class="object-cover w-full h-56 rounded-lg lg:w-64" src={Weather} alt="Weather Full Stack App"/>
-
                 <div class="flex flex-col justify-between py-6 lg:mx-6">
                     <a href="https://weatherappejs.up.railway.app/" class="text-xl font-semibold text-gray-800 hover:underline dark:text-white ">
                         Mr.atmospheric 
