@@ -10,10 +10,10 @@ function App() {
     <div className="App">
     
       <Header/>
-      <About/>
+      {/* <About/> */}
       <Projects/>
       <Contact/>
-      <Teams/>
+      {/* <Teams/> */}
     </div>
   );
 }

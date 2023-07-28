@@ -8,10 +8,10 @@ import { Bars3Icon, XMarkIcon } from '@heroicons/react/24/outline'
 
 const navigation = [
     { name: 'Home', href: '#Home' },
-    { name: 'About', href: '#About' },
+    
     { name: 'Recent Work', href: '#Projects' },
     { name: 'Contact Me', href: '#Contact' },
-    { name: 'Favorite Teams', href: '#teams' },
+ 
   ]
 
 export default function Example() {
@@ -124,7 +124,46 @@ export default function Example() {
           </svg>
         </div>
 
-        <div className="mx-auto max-w-2xl py-32 sm:py-48 lg:py-32" >
+
+
+  <div class="flex flex-col md:flex-row mt-8 mb-8">
+    {/* <!-- Left side: Title and Paragraph (Takes up half of the page on medium screens and above) --> */}
+    <div class="md:w-2/5 p-4 ml-12">
+      <h2 class="text-3xl font-bold mb-2">Software engineer</h2>
+      <p> Hello there! I'm Micheci , a full-stack software engineer working at 100Devs.
+            Currently, I'm working on an exciting project, building the
+            Jarvis AI from Iron-Man, bringing the futuristic AI technology
+            to life! With a passion for crafting exceptional digital 
+            experiences. My expertise lies in Mongo, Express, React, and 
+            Node, allowing me to
+            develop robust and seamless web applications from the ground up.
+            If you're looking for a versatile, passionate and hard-working,
+            full-stack software engineer with a focus on machine learning 
+            and a genuine passion for collaboration, I'd be thrilled to be
+            part of your team. Let's combine our skills and creativity to 
+            build remarkable software that leaves a lasting impact. Feel free
+            to explore my portfolio at https://www.micheci.com/ to learn more
+            about my projects and capabilities. Looking forward to the opportunity to work together!</p>
+      <div className=' mt-5 flex justify-around' >
+            <a href="https://www.linkedin.com/in/micheci-martinez-6736201a1/"><FaLinkedin/></a>
+            <a href="https://github.com/micheci"><FaGithub/></a>
+            <a href="https://twitter.com/Micheci12"><FaTwitter/></a>
+           </div>  
+    </div>
+
+    {/* <!-- Right side: Picture (Takes up half of the page on medium screens and above) --> */}
+    <div class="md:w-1/2 p-4 flex justify-center items-center">
+    <img className='w-48 h-48 md:w-64 md:h-64 rounded-full' src={newpic}></img>
+
+      {/* <!-- Replace the above div with the actual image using 'bg-cover' and 'bg-center' classes --> */}
+    </div>
+  </div>
+
+
+    
+
+
+        {/* <div className="mx-auto max-w-4xl py-32 sm:py-48 lg:py-32" >
           <div className="hidden sm:mb-8 sm:flex sm:justify-center">
             <div className="relative rounded-full py-1 px-3 text-sm leading-6 text-gray-600 ring-1 ring-gray-900/10 hover:ring-gray-900/20">
               Hi! take a look at my most recent projects.{' '}
@@ -135,27 +174,27 @@ export default function Example() {
             </div>
           </div>
           <div className='flex'>
-          <div className="text-left">
+          <div className="text-left mr-6">
             <h1 className="text-4xl font-bold tracking-tight text-gray-900 sm:text-6xl">
               Full Stack Web Developer
             </h1>
             <p className="mt-4 text-lg leading-8 text-gray-600">
-            Hi!, I'm Micheci Martinez a Full Stack Web Developer in Dallas,Texas
+            Hello there! I'm Micheci , a full-stack software engineer working at 100Devs. Currently, I'm working on an exciting project, building the Jarvis AI from Iron-Man, bringing the futuristic AI technology to life! With a passion for crafting exceptional digital experiences. My expertise lies in Mongo, Express, React, and Node, allowing me to develop robust and seamless web applications from the ground up.
+
+If you're looking for a versatile, passionate and hard-working, full-stack software engineer with a focus on machine learning and a genuine passion for collaboration, I'd be thrilled to be part of your team. Let's combine our skills and creativity to build remarkable software that leaves a lasting impact. Feel free to explore my portfolio at https://www.micheci.com/ to learn more about my projects and capabilities. Looking forward to the opportunity to work together!
             </p>
             <div className=' mt-5 flex justify-around' >
             <a href="https://www.linkedin.com/in/micheci-martinez-6736201a1/"><FaGithub/></a>
             <a href="https://github.com/micheci"><FaLinkedin/></a>
             <a href="https://twitter.com/Micheci12"><FaTwitter/></a>
-          </div>
-
-        
-          
-            
+           </div>  
           </div>
           
-          <img className='rounded-full ' src={newpic}></img>
+          <div class="flex-1  w-20 h-20 rounded-full max-w-4xl  mr-4">
+    <img className='rounded-full ml-6 ' src={newpic}></img>
+</div>
           </div> 
-        </div>
+        </div> */}
 
         <div className="absolute inset-x-0 top-[calc(100%-13rem)] -z-10 transform-gpu overflow-hidden blur-3xl sm:top-[calc(100%-30rem)]">
           <svg
