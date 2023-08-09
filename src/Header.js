@@ -126,21 +126,25 @@ export default function Example() {
 
 
 
-  <div class="flex flex-col md:flex-row mt-8 mb-8">
+  <div class="flex flex-col md:flex-row lg:flex-row mt-8 mb-8">
     {/* <!-- Left side: Title and Paragraph (Takes up half of the page on medium screens and above) --> */}
-    <div class="md:w-2/5 p-4 ml-12">
-      <h2 class="text-3xl font-bold mb-2">Software engineer</h2>
+    <div class="md:w-2/5 p-10 ml-12">
+      <h2 class=" flex text-3xl font-bold mb-2 justify-center">Software engineer</h2>
       <p> Hello there! I'm Micheci , a full-stack software engineer working at 100Devs.
             Currently, I'm working on an exciting project, building the
             Jarvis AI from Iron-Man, bringing the futuristic AI technology
             to life! With a passion for crafting exceptional digital 
-            experiences. My expertise lies in Mongo, Express, React, and 
+            experiences.</p>
+            <br></br>
+            <p>My expertise lies in Mongo, Express, React, and 
             Node, allowing me to
             develop robust and seamless web applications from the ground up.
             If you're looking for a versatile, passionate and hard-working,
             full-stack software engineer with a focus on machine learning 
             and a genuine passion for collaboration, I'd be thrilled to be
-            part of your team. Let's combine our skills and creativity to 
+            part of your team.</p>
+            <br></br>
+            <p>Let's combine our skills and creativity to 
             build remarkable software that leaves a lasting impact. Feel free
             to explore my portfolio at https://www.micheci.com/ to learn more
             about my projects and capabilities. Looking forward to the opportunity to work together!</p>

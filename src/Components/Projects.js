@@ -6,7 +6,7 @@ import NFT from '../Pics/NFT.jpg'
 import Weather from '../Pics/Weather.jpg'
 import Finance from '../Pics/Finance.jpg'
 import MMGG from '../Pics/MMGG.jpg'
-import GMG from '../Pics/GMG.jpg'
+import munkyLogo from '../Pics/default.png'
 
 import NightSkyVid from '../Videos/NightSky.mp4'
 import DosStreamVid from '../Videos/dosStream.mp4'
@@ -15,6 +15,7 @@ import MunkyNFT from '../Videos/MunkyNFT.mp4'
 import FT from '../Videos/F&T.mp4'
 import GymChewVid from '../Videos/Gym.mp4'
 import MMGGVid from '../Videos/MMGG.mp4'
+import JarvisVid from '../Videos/Jarvisv2.mp4'
 
 
 function Projects() {
@@ -30,13 +31,26 @@ function Projects() {
         <div class="grid grid-cols-1 gap-8 mt-8 md:mt-16 md:grid-cols-2">
 
         <div class="lg:flex">
+            
+            <video class="object-cover w-full h-56 rounded-lg lg:w-64" src={JarvisVid} controls="controls"></video>
+
+                <div class="flex flex-col justify-between py-6 lg:mx-6">
+                    <h1 class="text-xl font-semibold text-gray-800 hover:underline dark:text-white ">
+                       Jarvis(In Progress,check out the video!)
+                    </h1>
+                    <span class="text-sm text-gray-500 dark:text-gray-300">Introducing J.A.R.V.I.S. (Just A Responsive Virtual Interactive System), inspired by Iron Man's AI. Built with the MERN stack and advanced AI like ChatGPT, J.A.R.V.I.S. understands your spoken questions and responds both textually and audibly. Its React interface ensures user-friendliness while the MERN stack handles data efficiently. J.A.R.V.I.S. aims to redefine AI interaction, bridging technology and conversation seamlessly.
+</span>
+                </div>
+            </div>
+
+        <div class="lg:flex">
+            
             <video class="object-cover w-full h-56 rounded-lg lg:w-64" src={MunkyNFT} controls="controls"></video>
 
                 <div class="flex flex-col justify-between py-6 lg:mx-6">
                     <a href="https://cryptosite-production.up.railway.app/" class="text-xl font-semibold text-gray-800 hover:underline dark:text-white ">
                         MunkyNFT
                     </a>
-
                     <span class="text-sm text-gray-500 dark:text-gray-300">Immerse yourself in the vivid and imaginative world of MunkyNFT as you explore a diverse range of art styles, themes, and techniques. From breathtaking illustrations and mesmerizing animations to thought-provoking conceptual art, each MunkyNFT is a unique and exclusive creation, waiting to be discovered and appreciated by collectors like you.</span>
                 </div>
             </div>
