@@ -16,6 +16,8 @@ import FT from '../Videos/F&T.mp4'
 import GymChewVid from '../Videos/Gym.mp4'
 import MMGGVid from '../Videos/MMGG.mp4'
 import JarvisVid from '../Videos/Jarvisv2.mp4'
+import JarvisVid2 from '../Videos/jarvisv3.mp4'
+
 
 
 function Projects() {
@@ -23,25 +25,31 @@ function Projects() {
    
 <section id="Projects" class="bg-white dark:bg-gray-900">
     <div class="container px-6 py-10 mx-auto">
-        <h1 class="text-3xl font-semibold text-gray-800 capitalize lg:text-4xl dark:text-white">Recent Work</h1>
+        <h1 class="text-3xl font-bold text-gray-800 capitalize lg:text-4xl dark:text-white">Recent Work</h1>
 
 
+        <h1 class="text-3xl font-semibold text-gray-800 hover:underline underline dark:text-white ">
+                       Jarvis(In Progress,check out the videos!)
+                    </h1>
+   <div class='highlight'>
+           
+                    <br></br>
+                <div class="prototype h1 ">
+                    
+                    <p class='text-white text-3xl'>V1</p>
+            <video class="object-cover w-full h-56 rounded-lg lg:w-64" src={JarvisVid} controls="controls"></video>
+            </div>
 
-
+            <div class="prototype h1 ">
+            <p class='text-white text-3xl'>V2</p>
+            <video class="object-cover w-full h-56 rounded-lg lg:w-64" src={JarvisVid2} controls="controls"></video>
+</div>
+         
+                </div>
+            
         <div class="grid grid-cols-1 gap-8 mt-8 md:mt-16 md:grid-cols-2">
 
-        <div class="lg:flex">
-            
-            <video class="object-cover w-full h-56 rounded-lg lg:w-64" src={JarvisVid} controls="controls"></video>
-
-                <div class="flex flex-col justify-between py-6 lg:mx-6">
-                    <h1 class="text-xl font-semibold text-gray-800 hover:underline dark:text-white ">
-                       Jarvis(In Progress,check out the video!)
-                    </h1>
-                    <span class="text-sm text-gray-500 dark:text-gray-300">Introducing J.A.R.V.I.S. (Just A Responsive Virtual Interactive System), inspired by Iron Man's AI. Built with the MERN stack and advanced AI like ChatGPT, J.A.R.V.I.S. understands your spoken questions and responds both textually and audibly. Its React interface ensures user-friendliness while the MERN stack handles data efficiently. J.A.R.V.I.S. aims to redefine AI interaction, bridging technology and conversation seamlessly.
-</span>
-                </div>
-            </div>
+     
 
         <div class="lg:flex">
             

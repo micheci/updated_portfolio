@@ -1,0 +1,8 @@
+.prototype {
+color:red;
+display:flex;
+flex-direction:column}
+.highlight{
+display:flex;
+flex-direction:row;
+justify-content: space-around;}
