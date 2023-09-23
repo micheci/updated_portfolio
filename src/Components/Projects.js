@@ -17,6 +17,7 @@ import GymChewVid from '../Videos/Gym.mp4'
 import MMGGVid from '../Videos/MMGG.mp4'
 import JarvisVid from '../Videos/Jarvisv2.mp4'
 import JarvisVid2 from '../Videos/jarvisv3.mp4'
+import NikeVid from '../Videos/Nike.mp4'
 
 
 
@@ -25,10 +26,21 @@ function Projects() {
    
 <section id="Projects" class="bg-white dark:bg-gray-900">
     <div class="container px-6 py-10 mx-auto">
-        <h1 class="text-3xl font-bold text-gray-800 capitalize lg:text-4xl dark:text-white">Recent Work</h1>
+        <h1 class="text-3xl font-bold text-gray-800 capitalize lg:text-2xl dark:text-white">Jarvis Highlights</h1>
 
+        <div className="flex justify-between">
+      <div className="w-1/2 p-4">
+      <h1 class="text-2xl font-bold capitalize lg:text-2xl dark:text-white">v1</h1>
 
-        <h1 class="text-3xl font-semibold text-gray-800 hover:underline underline dark:text-white ">
+      <video class="object-cover w-full h-56 rounded-lg lg:w-64" src={JarvisVid} controls="controls"></video>
+      </div>
+      <div className="w-1/2 p-4">
+      <h1 class="text-2xl font-bold capitalize lg:text-2xl dark:text-white">v2</h1>
+
+      <video class="object-cover w-full h-56 rounded-lg lg:w-64" src={JarvisVid2} controls="controls"></video>
+      </div>
+    </div>
+        {/* <h1 class="text-3xl font-semibold text-gray-800 hover:underline underline dark:text-white ">
                        Jarvis(In Progress,check out the videos!)
                     </h1>
    <div class='highlight'>
@@ -45,8 +57,8 @@ function Projects() {
             <video class="object-cover w-full h-56 rounded-lg lg:w-64" src={JarvisVid2} controls="controls"></video>
 </div>
          
-                </div>
-            
+                </div> */}
+            <h1 class="text-3xl font-bold text-gray-800 capitalize lg:text-4xl dark:text-white">Recent Work</h1>
         <div class="grid grid-cols-1 gap-8 mt-8 md:mt-16 md:grid-cols-2">
 
      
@@ -76,6 +88,18 @@ function Projects() {
             </div>
             
             <div class="lg:flex">
+                <video class="object-cover w-full h-56 rounded-lg lg:w-64"src={NikeVid} controls="controls"></video>
+
+                <div class="flex flex-col justify-between py-6 lg:mx-6">
+                    <text class="text-xl font-semibold text-gray-800 hover:underline dark:text-white ">
+                        Kicks
+                    </text>
+                    
+                    <span class="text-sm text-gray-500 dark:text-gray-300">"Kicks" is a cutting-edge shoe retail app that specializes in offering premium footwear selections. With an extensive inventory, it provides users with exclusive access to the most sought-after and stylish shoes available in the market. Elevate your footwear game and stay ahead of the fashion curve with "Kicks."</span>
+                </div>
+            </div>
+
+            <div class="lg:flex">
                 <video class="object-cover w-full h-56 rounded-lg lg:w-64"src={NightSkyVid} controls="controls"></video>
 
                 <div class="flex flex-col justify-between py-6 lg:mx-6">
@@ -98,6 +122,7 @@ function Projects() {
                     <span class="text-sm text-gray-500 dark:text-gray-300">StreamSync brings together the captivating content of Ibai, the renowned Spanish streamer, and the thrilling updates from Riot Games, the creators of popular games like League of Legends and Valorant. Whether you're a fan of Ibai's entertaining streams, hilarious commentary, and engaging community interactions, or you're eager to stay updated on Riot Games' esports tournaments, game releases, and exclusive content, StreamSync has got you covered.</span>
                 </div>
             </div>
+            
 
             <div class="lg:flex">
             <video class="object-cover w-full h-56 rounded-lg lg:w-64" src={FreedomApp} controls="controls"></video>
