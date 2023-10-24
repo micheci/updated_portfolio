@@ -1,0 +1,58 @@
+.container{
+}
+
+.projectTitle{
+font-size:32px;
+font-weight: bold;
+}
+.btn {
+margin-top:20px;
+margin-bottom:20px;
+
+background-color: #bee3f8;      /* Blue background color */
+  color:black;                /* White text color */
+  border: 1px solid black;     /* Black border with 1px width */
+  border-radius: 10%;          /* Rounded shape (circle) */
+  padding: 10px 20px;          /* Padding for the button */
+  font-weight: bold;           /* Make the text bold */
+  cursor: pointer;             /* Change cursor to pointer on hover */
+}
+
+.btn:hover {
+  background-color: blue; 
+  color:white; /* Darker blue on hover */
+}
+.projectBG{
+background-color:#595959;}
+.projectHeader{
+text-align:center;
+display:flex;
+justify-content:center;
+align-items:center;
+font-size:32px;
+font-weight:bold;
+margin-bottom:10px;}
+.grid {
+  display: grid;
+  grid-template-columns: repeat(3,1fr); /* Two columns per row */
+  justify-items: center; /* Center horizontally */
+  align-items: center; /* Center vertically */
+  margin-left: 30px; /* Add margin to the left */
+  margin-right: 30px; /* Add margin to the right */
+  gap: 20px; /* Adjust the gap between cards */
+  @media (max-width: 800px) {
+    grid-template-columns: repeat(1, 1fr); /* Two columns per row for screens up to 768px */
+  }
+}
+.card {
+  min-height:30rem;
+  padding: 20px;
+  border: 1px solid #000;
+  text-align: center;
+  background-color: #fff;
+}
+.cardContainer{
+  min-height:30rem;}
+.card-text{
+text-align:center;
+width:100%;}

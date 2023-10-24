@@ -1,231 +1,81 @@
 import { useState } from 'react'
 import { Dialog } from '@headlessui/react'
-import {FaGithub,FaLinkedin,FaFutbol,FaTwitter} from 'react-icons/fa'
+import {FaGithub,FaTwitter,FaLinkedin} from 'react-icons/fa'
+
 import newpic from '../src/newpic.png'
 import Logo from '../src/Pics/Logo.png'
+import SoccerBG from '../src/Pics/PortfolioSoccerBG.jpg'
+import NewSoccerVid from '../src/Pics/newSoccerVid.jpg'
+import profilePicTwiiter from '../src/Pics/profilePicTwiiter.png'
+import './header.css'
+import 'remixicon/fonts/remixicon.css'
+import { RiTwitterXFill} from "react-icons/ri";
 
-import { Bars3Icon, XMarkIcon } from '@heroicons/react/24/outline'
 
 const navigation = [
-    { name: 'Home', href: '#Home' },
-    
     { name: 'Recent Work', href: '#Projects' },
-    { name: 'Contact Me', href: '#Contact' },
- 
+    { name:'Prototypes', href:'#Prototypes'},
+    { name: 'Contact Me', href: '#Contact' }, 
+   
   ]
 
 export default function Example() {
-  const [mobileMenuOpen, setMobileMenuOpen] = useState(false)
 
   return (
-    <div id='Home' className="bg-white">
-      <header className="absolute inset-x-0 top-0 z-50">
-        <nav className="flex items-center justify-between p-6 lg:px-8" aria-label="Global">
-          <div className="flex lg:flex-1">
-            <a href="#" className="-m-1.5 p-1.5">
-              <span className="sr-only">Your Company</span>
-              <img className='h-12' src={Logo}></img>
-               
-                
-              
-            </a>
-          </div>
-          <div className="flex lg:hidden">
-            <button
-              type="button"
-              className="-m-2.5 inline-flex items-center justify-center rounded-md p-2.5 text-gray-700"
-              onClick={() => setMobileMenuOpen(true)}
-            >
-              <span className="sr-only">Open main menu</span>
-              <Bars3Icon className="h-6 w-6" aria-hidden="true" />
-            </button>
-          </div>
-          <div className="hidden lg:flex lg:gap-x-12">
-            {navigation.map((item) => (
-              <a key={item.name} href={item.href} className="text-sm font-semibold leading-6 text-gray-900">
-                {item.name}
-              </a>
-            ))}
-          </div>
-          
-        </nav>
-        <Dialog as="div" className="lg:hidden" open={mobileMenuOpen} onClose={setMobileMenuOpen}>
-          <div className="fixed inset-0 z-50" />
-          <Dialog.Panel className="fixed inset-y-0 right-0 z-50 w-full overflow-y-auto bg-white px-6 py-6 sm:max-w-sm sm:ring-1 sm:ring-gray-900/10">
-            <div className="flex items-center justify-between">
-              <a href="#" className="-m-1.5 p-1.5">
-                <span className="sr-only">Your Company</span>
-                <img
-                  className="h-8 w-auto"
-                  src="https://tailwindui.com/img/logos/mark.svg?color=indigo&shade=600"
-                  alt=""
-                />
-              </a>
-              <button
-                type="button"
-                className="-m-2.5 rounded-md p-2.5 text-gray-700"
-                onClick={() => setMobileMenuOpen(false)}
-              >
-                <span className="sr-only">Close menu</span>
-                <XMarkIcon className="h-6 w-6" aria-hidden="true" />
-              </button>
-            </div>
-            <div className="mt-6 flow-root">
-              <div className="-my-6 divide-y divide-gray-500/10">
-                <div className="space-y-2 py-6">
-                  {navigation.map((item) => (
-                    <a
-                      key={item.name}
-                      href={item.href}
-                      className="-mx-3 block rounded-lg py-2 px-3 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50"
-                    >
-                      {item.name}
-                    </a>
-                  ))}
-                </div>
-                <div className="py-6">
-                  <a
-                    href="#"
-                    className="-mx-3 block rounded-lg py-2.5 px-3 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50"
-                  >
-                    Log in
-                  </a>
-                </div>
-              </div>
-            </div>
-          </Dialog.Panel>
-        </Dialog>
-      </header>
+    <div id="Home" className='pb-14 text-white' style={{ backgroundImage: `url(${NewSoccerVid})`,backgroundSize: 'cover'  }}>
+       
+       <nav className="flex items-center justify-between p-6 lg:px-8" aria-label="Global">
+  <ul className="flex space-x-4">
+    {navigation.map((item, index) => (
+      <li key={index}>
+        <a href={item.href} className="text-white fw-bold hover:text-yellow-400">
+          {item.name}
+        </a>
+      </li>
+    ))}
+  </ul>
+  {/* This is item on the top right */}
+  <div className="bg-yellow-400 px-4 py-2 rounded-md ">
+    <a href="https://docs.google.com/document/d/1BUcE_V2-Eb87sUVA3dc-JvWFL3t5U6Qi/edit?usp=sharing&ouid=112587397841558175089&rtpof=true&sd=true" className="text-black fw-bold hover:text-blue-700">
+      Resume
+    </a>
+  </div>
+</nav>
 
-      <div className="relative isolate px-6 pt-14 lg:px-8">
-        <div className="absolute inset-x-0 -top-40 -z-10 transform-gpu overflow-hidden blur-3xl sm:-top-80">
-          <svg
-            className="relative left-[calc(50%-11rem)] -z-10 h-[21.1875rem] max-w-none -translate-x-1/2 rotate-[30deg] sm:left-[calc(50%-30rem)] sm:h-[42.375rem]"
-            viewBox="0 0 1155 678"
-          >
-            <path
-              fill="url(#45de2b6b-92d5-4d68-a6a0-9b9b2abad533)"
-              fillOpacity=".3"
-              d="M317.219 518.975L203.852 678 0 438.341l317.219 80.634 204.172-286.402c1.307 132.337 45.083 346.658 209.733 145.248C936.936 126.058 882.053-94.234 1031.02 41.331c119.18 108.451 130.68 295.337 121.53 375.223L855 299l21.173 362.054-558.954-142.079z"
-            />
-            <defs>
-              <linearGradient
-                id="45de2b6b-92d5-4d68-a6a0-9b9b2abad533"
-                x1="1155.49"
-                x2="-78.208"
-                y1=".177"
-                y2="474.645"
-                gradientUnits="userSpaceOnUse"
-              >
-                <stop stopColor="#9089FC" />
-                <stop offset={1} stopColor="#FF80B5" />
-              </linearGradient>
-            </defs>
-          </svg>
-        </div>
+       
+    
 
 
-
-  <div class="flex flex-col md:flex-row lg:flex-row mt-8 mb-8">
+  <div class="flex flex-col md:flex-row lg:flex-row mt-2">
     {/* <!-- Left side: Title and Paragraph (Takes up half of the page on medium screens and above) --> */}
-    <div class="md:w-2/5 p-10 ml-12">
-      <h2 class=" flex text-3xl font-bold mb-2 justify-center">Software engineer</h2>
-      <p> Hello there! I'm Micheci , a full-stack software engineer working at 100Devs.
-            Currently, I'm working on an exciting project, building the
-            Jarvis AI from Iron-Man, bringing the futuristic AI technology
-            to life! With a passion for crafting exceptional digital 
-            experiences.</p>
-            <br></br>
-            <p>My expertise lies in Mongo, Express, React, and 
-            Node, allowing me to
-            develop robust and seamless web applications from the ground up.
-            If you're looking for a versatile, passionate and hard-working,
-            full-stack software engineer with a focus on machine learning 
-            and a genuine passion for collaboration, I'd be thrilled to be
-            part of your team.</p>
-            <br></br>
-            <p>Let's combine our skills and creativity to 
-            build remarkable software that leaves a lasting impact. Feel free
-            to explore my portfolio at https://www.micheci.com/ to learn more
-            about my projects and capabilities. Looking forward to the opportunity to work together!</p>
-      <div className=' mt-5 flex justify-around' >
-            <a href="https://www.linkedin.com/in/micheci-martinez-6736201a1/"><FaLinkedin/></a>
-            <a href="https://github.com/micheci"><FaGithub/></a>
-            <a href="https://twitter.com/Micheci12"><FaTwitter/></a>
+    <div class="md:w-2/5 p-8 ml-36">
+      <p className='helloText'>Hello there!</p>
+<p className='summmaryText'>I'm <span className='text-3x1  bg-blue-200 p-1 text-black'>Micheci</span>, a seasoned full-stack software engineer with a strong foundation in MongoDB, Express, React, and Node. My expertise empowers me to craft robust and seamless web applications from the ground up, always with an eye for exceptional user experiences.<br></br>
+<br></br>
+<p>My passion for User Experience (UX) Design is what fuels my work. I strive to integrate innovative solutions into our projects, <span className='text-3x1  bg-blue-200 p-1 text-black'>ensuring that our software remains cutting-edge while delivering a user-centric experience.)</span> I thrive in collaborative environments, working harmoniously with cross-functional teams to achieve our goals.</p>
+<br></br>
+If you're in search of a reliable, dedicated professional who's committed to pushing the boundaries of technology and creating lasting impact through exceptional user experiences, I'd love to join your team.
+<br></br>
+Feel free to <span className='text-3x1  bg-blue-200 p-1 text-black'>explore my portfolio in the top right :)</span> I'm eager to explore the possibilities of working together to achieve great things. Let's build something remarkable!</p>
+
+      <div className=' mt-5 flex flex-row justify-around' >
+            <a className='socials'  href="https://www.linkedin.com/in/micheci-martinez-6736201a1/"><FaLinkedin  style={{ fontSize: '2em' }} /></a>
+            <a className='socialsG'href="https://github.com/micheci"><FaGithub style={{ fontSize: '2em' }}/></a>
+            <a className='socialsT' href="https://twitter.com/Micheci12"><RiTwitterXFill style={{ fontSize: '2em' }}/></a>
            </div>  
     </div>
 
     {/* <!-- Right side: Picture (Takes up half of the page on medium screens and above) --> */}
-    <div class="md:w-1/2 p-4 flex justify-center items-center">
-    <img className='w-48 h-48 md:w-64 md:h-64 rounded-full' src={newpic}></img>
+    <div class="md:w-1/2 p-4 flex flex-col justify-center items-center">
+    <img className='w-48 h-48 md:w-64 md:h-64 rounded-full' src={profilePicTwiiter}></img>
+    <h2 class="  text-4xl font-bold  mb-2 justify-center">Full-Stack Developer</h2>
+    <p><span className='text-3x1  bg-blue-200  border rounded p-1 text-black'>Text Me: 806-252-6923</span></p>
+
 
       {/* <!-- Replace the above div with the actual image using 'bg-cover' and 'bg-center' classes --> */}
     </div>
   </div>
 
-
-    
-
-
-        {/* <div className="mx-auto max-w-4xl py-32 sm:py-48 lg:py-32" >
-          <div className="hidden sm:mb-8 sm:flex sm:justify-center">
-            <div className="relative rounded-full py-1 px-3 text-sm leading-6 text-gray-600 ring-1 ring-gray-900/10 hover:ring-gray-900/20">
-              Hi! take a look at my most recent projects.{' '}
-              <a href="#Projects" className="font-semibold text-indigo-600">
-                <span className="absolute inset-0" aria-hidden="true" />
-                Go to Projects <span aria-hidden="true">&rarr;</span>
-              </a>
-            </div>
-          </div>
-          <div className='flex'>
-          <div className="text-left mr-6">
-            <h1 className="text-4xl font-bold tracking-tight text-gray-900 sm:text-6xl">
-              Full Stack Web Developer
-            </h1>
-            <p className="mt-4 text-lg leading-8 text-gray-600">
-            Hello there! I'm Micheci , a full-stack software engineer working at 100Devs. Currently, I'm working on an exciting project, building the Jarvis AI from Iron-Man, bringing the futuristic AI technology to life! With a passion for crafting exceptional digital experiences. My expertise lies in Mongo, Express, React, and Node, allowing me to develop robust and seamless web applications from the ground up.
-
-If you're looking for a versatile, passionate and hard-working, full-stack software engineer with a focus on machine learning and a genuine passion for collaboration, I'd be thrilled to be part of your team. Let's combine our skills and creativity to build remarkable software that leaves a lasting impact. Feel free to explore my portfolio at https://www.micheci.com/ to learn more about my projects and capabilities. Looking forward to the opportunity to work together!
-            </p>
-            <div className=' mt-5 flex justify-around' >
-            <a href="https://www.linkedin.com/in/micheci-martinez-6736201a1/"><FaGithub/></a>
-            <a href="https://github.com/micheci"><FaLinkedin/></a>
-            <a href="https://twitter.com/Micheci12"><FaTwitter/></a>
-           </div>  
-          </div>
-          
-          <div class="flex-1  w-20 h-20 rounded-full max-w-4xl  mr-4">
-    <img className='rounded-full ml-6 ' src={newpic}></img>
-</div>
-          </div> 
-        </div> */}
-
-        <div className="absolute inset-x-0 top-[calc(100%-13rem)] -z-10 transform-gpu overflow-hidden blur-3xl sm:top-[calc(100%-30rem)]">
-          <svg
-            className="relative left-[calc(50%+3rem)] h-[21.1875rem] max-w-none -translate-x-1/2 sm:left-[calc(50%+36rem)] sm:h-[42.375rem]"
-            viewBox="0 0 1155 678"
-          >
-            <path
-              fill="url(#ecb5b0c9-546c-4772-8c71-4d3f06d544bc)"
-              fillOpacity=".3"
-              d="M317.219 518.975L203.852 678 0 438.341l317.219 80.634 204.172-286.402c1.307 132.337 45.083 346.658 209.733 145.248C936.936 126.058 882.053-94.234 1031.02 41.331c119.18 108.451 130.68 295.337 121.53 375.223L855 299l21.173 362.054-558.954-142.079z"
-            />
-            <defs>
-              <linearGradient
-                id="ecb5b0c9-546c-4772-8c71-4d3f06d544bc"
-                x1="1155.49"
-                x2="-78.208"
-                y1=".177"
-                y2="474.645"
-                gradientUnits="userSpaceOnUse"
-              >
-                <stop stopColor="#9089FC" />
-                <stop offset={1} stopColor="#FF80B5" />
-              </linearGradient>
-            </defs>
-          </svg>
-        </div>
-      </div>
     </div>
   )
 }
